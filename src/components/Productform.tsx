@@ -49,7 +49,6 @@ const ProductForm: React.FC<ProductFormProps> = ({ addProduct }) => {
           onChange={handleChange}
           placeholder="Nombre"
           required
-          readOnly={!!product.name}
         />
         <input
           type="number"
@@ -66,7 +65,6 @@ const ProductForm: React.FC<ProductFormProps> = ({ addProduct }) => {
           onChange={handleImageChange}
           required
         />
-        {imagePreview && <img src={imagePreview} alt="Preview" style={{ maxHeight: '100px', marginTop: '10px' }} />}
         <input
           type="text"
           name="model"

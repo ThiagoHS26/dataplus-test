@@ -12,6 +12,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => (
     <p>Precio: ${product.price}</p>
     <p>Modelo: {product.model}</p>
     <p>Estado: {product.status}</p>
+    <button onClick={() => console.log(`Clicked on ${product.name}`)}>
+      Ver detalles
+    </button>
+    <hr />
+    <button onClick={() => console.log(`Clicked on ${product.name}`)}>
+      Comprar
+    </button>
   </div>
 );
 
